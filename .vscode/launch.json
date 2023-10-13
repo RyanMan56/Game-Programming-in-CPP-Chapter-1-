@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "name": "Debug build",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/debug/helloworld",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "preLaunchTask": "Debug build"
+    },
+    {
+      "name": "Release build",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/release/helloworld",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "preLaunchTask": "Release build"
+    }
+  ],
+  "version": "2.0.0"
+}
