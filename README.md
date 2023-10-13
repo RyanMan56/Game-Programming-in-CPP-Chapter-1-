@@ -10,7 +10,7 @@ This will prepare the `debug` and `release` folders and will generate a release 
 
 To instead generate a debug build, run `make debug`
 
-2. `cd` into the `debug` or `release` folder and run `./hello_world`
+2. `cd` into the `debug` or `release` folder and run `./helloworld`
 
 ## How to debug:
 
