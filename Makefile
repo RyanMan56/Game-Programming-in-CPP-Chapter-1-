@@ -11,7 +11,10 @@ CFLAGS = \
 # can also use one or more "-I directory_name" flags to define additional include directories
 
 # Project files
-OBJECTS = helloworld.o
+SRC_DIR = src
+# wildcard $(SRC_DIR)/*.cpp) - searches for cpp files in src folder
+# patsubst $(SRC_DIR)/%.cpp,%.o,$(wildcard $(SRC_DIR)/*.cpp) - replaces src/%.cpp with %.o
+OBJECTS = $(patsubst $(SRC_DIR)/%.cpp,%.o,$(wildcard $(SRC_DIR)/*.cpp))
 EXE = helloworld
 
 # Debug build settings
