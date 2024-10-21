@@ -2,6 +2,11 @@
 
 CMake starting point for my C++ projects. Configured for VSCode debugging
 
+## After cloning the template:
+
+1. Find and replace `CppTemplate` with your project name
+2. Find and replace `cpp_template_compiler_flags` with `<YOUR_PROJECT_NAME>_compiler_flags`
+
 ## How to run
 
 1. Create a `build` directory, e.g. `mkdir build`
