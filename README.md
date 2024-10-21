@@ -14,6 +14,11 @@ There are a couple of handy scripts for mac/linux (I haven't created these for w
 - `scripts/build.sh` - cds into the build directory, generates a native build system, compiles/links the project, and runs the executable
 - `scripts/clean_build.sh` - removes the `build` directory and runs `build.sh`
 
-### Note
+### Notes
 
-When adding a new .cpp file make sure to run `cmake ..` e.g. `cmake .. && cmake --build . && ./bin/CppTemplate` otherwise the change to the sources won't get picked up by CMake
+- When adding a new .cpp file make sure to run `cmake ..` e.g. `cmake .. && cmake --build . && ./bin/CppTemplate` otherwise the change to the sources won't get picked up by CMake
+
+- To get debugging working you may have to follow these steps:
+
+  1. Open the Command Palette and search for `CMake: Configure`. This will configure your project for building.
+  2. Once configured, build the project by selecting `CMake: Build` or running the build task.

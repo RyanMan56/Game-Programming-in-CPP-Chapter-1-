@@ -2,7 +2,6 @@
 
 int main()
 {
-    int x{10};
-    std::cout << "Hello world! " << x << '\n';
+    std::cout << "Hello world!\n";
     return 0;
 }
