@@ -1,17 +1,19 @@
-# Hello World in C++
+# C++ Template
 
-## How to run:
+CMake starting point for my C++ projects. Configured for VSCode debugging
 
-Run the following command:
+## How to run
 
-1. `make`
+1. Create a `build` directory, e.g. `mkdir build`
+2. Generate a native build system, `cd build && cmake ..`
+3. Compile/link the project, `cmake --build .`
+4. Run the project `./bin/CppTemplate` (assuming you're on mac/linux. You'll probably just want to open and run the project in VS if you're on windows)
 
-This will prepare the `debug` and `release` folders and will generate a release build.
+There are a couple of handy scripts for mac/linux (I haven't created these for windows yet). Make sure to cd into the scripts directory and run them from there:
 
-To instead generate a debug build, run `make debug`
+- `scripts/build.sh` - cds into the build directory, generates a native build system, compiles/links the project, and runs the executable
+- `scripts/clean_build.sh` - removes the `build` directory and runs `build.sh`
 
-2. `cd` into the `debug` or `release` folder and run `./helloworld`
+### Note
 
-## How to debug:
-
-The project has been configured to be built and debugged with vscode using the Makefile. Just set a breakpoint and open the debug panel and launch `Debug build`
+When adding a new .cpp file make sure to run `cmake ..` e.g. `cmake .. && cmake --build . && ./bin/CppTemplate` otherwise the change to the sources won't get picked up by CMake
