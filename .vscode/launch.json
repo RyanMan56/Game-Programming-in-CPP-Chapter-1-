@@ -4,7 +4,7 @@
       "name": "C/C++: clang++ build and debug",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/bin/CppTemplate",
+      "program": "${workspaceFolder}/build/bin/Chapter1",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",

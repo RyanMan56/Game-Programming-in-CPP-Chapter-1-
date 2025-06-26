@@ -1,7 +1,15 @@
 #include <iostream>
+#include "game.h"
 
 int main()
 {
-    std::cout << "Hello world!\n";
+    Game game;
+    bool success = game.initialise();
+    std::cout << "Initialised\n";
+    if (success)
+    {
+        game.runLoop();
+    }
+    game.shutdown();
     return 0;
 }

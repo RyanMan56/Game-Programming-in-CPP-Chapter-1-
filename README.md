@@ -1,11 +1,8 @@
-# C++ Template
+# Chapter 1
 
-CMake starting point for my C++ projects. Configured for VSCode debugging
+## Setup instructions
 
-## After cloning the template:
-
-1. Find and replace `CppTemplate` with your project name
-2. Find and replace `cpp_template_compiler_flags` with `<YOUR_PROJECT_NAME>_compiler_flags`
+1. `git submodule update --init --recursive`
 
 ## How to run
 
