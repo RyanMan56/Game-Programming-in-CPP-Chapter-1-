@@ -47,7 +47,6 @@ target_link_libraries(Chapter1
 
 target_include_directories(Chapter1 PUBLIC
   "${PROJECT_BINARY_DIR}/src"
-  "${CMAKE_SOURCE_DIR}/external/SDL2/include"
 )
 
 # Install the executable to the bin directory
